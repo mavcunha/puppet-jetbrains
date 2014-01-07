@@ -1,4 +1,5 @@
 ---
 script: "script/cibuild"
+bundler_args: --binstubs --path .bundle
 rvm:
   - "1.9.3"
