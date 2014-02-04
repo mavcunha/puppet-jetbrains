@@ -5,7 +5,7 @@ describe 'jetbrains::intellij' do
     let(:title) { 'community' }
     it do
       should contain_package('ideaIC').with({
-        :source => 'http://download.jetbrains.com/idea/ideaIC-13.0.1.dmg',
+        :source => 'http://download.jetbrains.com/idea/ideaIC-13.0.2.dmg',
         :provider => 'appdmg',
       })
     end
@@ -14,7 +14,7 @@ describe 'jetbrains::intellij' do
     let(:title) { 'ultimate' }
     it do
       should contain_package('ideaIU').with({
-        :source => 'http://download.jetbrains.com/idea/ideaIU-13.0.1.dmg',
+        :source => 'http://download.jetbrains.com/idea/ideaIU-13.0.2.dmg',
         :provider => 'appdmg',
       })
     end

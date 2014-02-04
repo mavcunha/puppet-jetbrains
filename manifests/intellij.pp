@@ -4,13 +4,13 @@ define jetbrains::intellij {
     'community': {
       jetbrains::package { 'ideaIC':
         path       => 'idea',
-        appversion => '13.0.1',
+        appversion => '13.0.2',
       }
     }
     'ultimate': {
       jetbrains::package { 'ideaIU':
         path       => 'idea',
-        appversion => '13.0.1',
+        appversion => '13.0.2',
       }
     }
     default: {
