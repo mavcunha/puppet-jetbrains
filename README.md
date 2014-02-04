@@ -1,10 +1,9 @@
+[![Build Status](https://snap-ci.com/i3YkY9o3EsatHWyNfSGber-7uRbxbZmrHJzCW_J28cQ/build_image)](https://snap-ci.com/projects/mavcunha/puppet-jetbrains/build_history)
+
 # JetBrains
 
 [JetBrains](http://www.jetbrains.com/) makes developer tools specially IDEs
 for different languages and platforms.
-
-[![Build Status](https://snap-ci.com/i3YkY9o3EsatHWyNfSGber-7uRbxbZmrHJzCW_J28cQ/build_image)](https://snap-ci.com/projects/mavcunha/puppet-jetbrains/build_history)
-[![Build Status](https://travis-ci.org/mavcunha/puppet-jetbrains.png)](https://travis-ci.org/mavcunha/puppet-jetbrains)
 
 ## Usage
 
