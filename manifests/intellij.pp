@@ -1,16 +1,17 @@
 # Public: Installs IntelliJ Community or Ultimate
 define jetbrains::intellij {
+  $current_version = '13.1.1'
   case $title {
     'community': {
       jetbrains::package { 'ideaIC':
         path       => 'idea',
-        appversion => '13.0.2',
+        appversion => $current_version,
       }
     }
     'ultimate': {
       jetbrains::package { 'ideaIU':
         path       => 'idea',
-        appversion => '13.0.2',
+        appversion => $current_version,
       }
     }
     default: {
