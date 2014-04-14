@@ -2,7 +2,7 @@
 #
 class jetbrains::rubymine {
   jetbrains::package { 'RubyMine':
-    appversion => '6.0.3',
+    appversion => '6.3',
     path       => 'ruby',
   }
 }
