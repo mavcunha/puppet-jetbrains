@@ -1,21 +1,23 @@
 # Public: Installs IntelliJ Community or Ultimate
-define jetbrains::intellij {
-  $current_version = '13.1.1'
-  case $title {
+class jetbrains::intellij(
+  $edition = 'community',
+  $version = '13.1.1') {
+
+  case $edition {
     'community': {
       jetbrains::package { 'ideaIC':
         path       => 'idea',
-        appversion => $current_version,
+        appversion => $version,
       }
     }
     'ultimate': {
       jetbrains::package { 'ideaIU':
         path       => 'idea',
-        appversion => $current_version,
+        appversion => $version,
       }
     }
     default: {
-      fail("invalid name (${title}), jetbrains::intellij { 'community'|'ultimate': }")
+      fail("invalid edition (${edition}) use: class { 'jetbrains::intellij': edition => 'community'|'ultimate', version => 'XX.X.X' }")
     }
   }
 }
