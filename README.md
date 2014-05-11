@@ -25,7 +25,7 @@ class { 'jetbrains::intellij':
 or
 
 class { 'jetbrains::intellij':
-  edition => 'community',
+  edition => 'ultimate',
   version => '13.1.1',
 }
 ```
