@@ -1,8 +1,9 @@
 # Public: Installs RubyMine from Jetbrains
 #
-class jetbrains::rubymine {
+class jetbrains::rubymine(
+  $version = '6.3.1') {
   jetbrains::package { 'RubyMine':
-    appversion => '6.3.1',
+    appversion => $version,
     path       => 'ruby',
   }
 }
