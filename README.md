@@ -1,4 +1,4 @@
-[![Build Status](https://snap-ci.com/i3YkY9o3EsatHWyNfSGber-7uRbxbZmrHJzCW_J28cQ/build_image)](https://snap-ci.com/projects/mavcunha/puppet-jetbrains/build_history)
+[![Build Status](https://snap-ci.com/mavcunha/puppet-jetbrains/branch/master/build_image)](https://snap-ci.com/mavcunha/puppet-jetbrains/branch/master)
 
 # JetBrains
 
