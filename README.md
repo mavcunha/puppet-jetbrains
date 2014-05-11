@@ -7,14 +7,27 @@ for different languages and platforms.
 
 ## Usage
 
-Choose what applications you want installed.
+Choose what applications you want installed, you can override the default
+versions by using `version => 'X.X.X'`.
 
 ```puppet
-include jetbrains::rubymine
+# to install RubyMine
+class { 'jetbrains::rubymine':
+  version => '6.3.1',
+}
 
-include jetbrains::intellij_ultimate
-  or
-include jetbrains::intellij_community
+# to install IntelliJ (Community or Ultimate editions)
+class { 'jetbrains::intellij':
+  edition => 'community',
+  version => '13.1.1',
+}
+
+or
+
+class { 'jetbrains::intellij':
+  edition => 'community',
+  version => '13.1.1',
+}
 ```
 
 ## Required Puppet Modules
