@@ -28,7 +28,7 @@ describe 'jetbrains::intellij' do
   context 'defaults' do
     it do
       should contain_package('ideaIC').with({
-        :source => 'http://download.jetbrains.com/idea/ideaIC-13.1.1.dmg',
+        :source => 'http://download.jetbrains.com/idea/ideaIC-2016.1.2.dmg',
         :provider => 'appdmg',
       })
     end
