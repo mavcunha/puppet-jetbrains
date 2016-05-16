@@ -1,7 +1,7 @@
 # Public: Installs IntelliJ Community or Ultimate
 class jetbrains::intellij(
   $edition = 'community',
-  $version = '13.1.1') {
+  $version = '2016.1.2') {
 
   case $edition {
     'community': {

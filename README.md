@@ -28,7 +28,34 @@ class { 'jetbrains::intellij':
   edition => 'ultimate',
   version => '13.1.1',
 }
+
+# to install the latest DataGrip
+include jetbrains::datagrip
+
+# to install the latest PyCharm Community edition
+include jetbrains::pycharm
+
+# or install downrev PyCharm Professional
+class { 'jetbrains::pycharm':
+  edition => 'professional',
+  version => '2016.1.1',
+}
 ```
+
+## Supported JetBrains IDEs
+
+* IntelliJ
+  * edition: community _(default)_
+  * edition: ultimate
+* RubyMine
+* PhpStorm
+* PyCharm
+  * edition: community _(default)_ 
+  * edition: professional
+* WebStorm
+* AppCode
+* CLion
+* DataGrip
 
 ## Required Puppet Modules
 
